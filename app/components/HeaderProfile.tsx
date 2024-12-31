@@ -13,7 +13,7 @@ const words = `Enthusiastic academic with over seven years of experience in teac
 
 export default function HeaderProfile() {
   return (
-    <section className="relative w-full mb-8">
+    <section id="intro" className="relative w-full mb-8">
       {/* Main container with background */}
       <div className="relative bg-gray-800 bg-opacity-50 rounded-lg backdrop-blur-sm shadow-lg overflow-hidden">
         {/* Background Effect - Positioned absolutely with lower z-index */}
@@ -98,6 +98,21 @@ export default function HeaderProfile() {
                     </li>
                     <li>
                       <Link
+                        href="https://www.researchgate.net/profile/Rajendran-Nirthika"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-300 hover:text-purple-400 transition-colors duration-200"
+                        aria-label="ResearchGate"
+                      >
+                        <img
+                          src="/images/researchgate.png"
+                          alt="ResearchGate"
+                          className="w-8 h-12 md:w-8 md:h-12 object-contain"
+                        />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
                         href="https://scholar.google.com/citations?user=WtrsAqsAAAAJ&hl=en&oi=ao"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -113,16 +128,14 @@ export default function HeaderProfile() {
                     </li>
                     <li>
                       <Link
-                        href="https://www.researchgate.net/profile/Rajendran-Nirthika"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="mailto:nirthika@univ.jfn.ac.lk"
                         className="text-gray-300 hover:text-purple-400 transition-colors duration-200"
-                        aria-label="ResearchGate"
+                        aria-label="GitHub"
                       >
                         <img
-                          src="/images/researchgate.png"
-                          alt="ResearchGate"
-                          className="w-8 h-12 md:w-8 md:h-12 object-contain"
+                          src="/images/github.png"
+                          alt="Github"
+                          className="w-12 h-12 md:w-12 md:h-12 object-contain"
                         />
                       </Link>
                     </li>

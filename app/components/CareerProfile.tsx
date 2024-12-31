@@ -68,7 +68,7 @@ export function CareerProfile() {
   }));
 
   return (
-    <div className="mb-8 bg-gray-800 bg-opacity-50 p-4 sm:p-6 rounded-lg backdrop-blur-sm shadow-lg">
+    <div id="career" className="mb-8 bg-gray-800 bg-opacity-50 p-4 sm:p-6 rounded-lg backdrop-blur-sm shadow-lg">
       <Timeline data={data} />
     </div>
   );

@@ -13,6 +13,68 @@ import Footer from './components/Footer'
 import Background from './components/Background'
 import { Headernav } from './components/Headernav'
 import { HeroParallaxDemo } from './components/parallax'
+import { FloatingNav } from '@/components/ui/floating-navbar'
+import {IconUserScan, IconMapHeart, IconAward, IconBooks, IconPlayVolleyball, IconMathFunction, IconUsers, IconPresentation, IconBuildingLighthouse} from "@tabler/icons-react";
+
+const navItems = [
+  {
+    name: "Intro",
+    link: "#intro",
+    icon: <IconUserScan className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "Career",
+    link: "#career",
+    icon: <IconMapHeart className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "Publications",
+    link: "#publications",
+    icon: <IconBooks className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "Awards",
+    link: "#awards",
+    icon: (
+      <IconAward className="h-4 w-4 text-neutral-500 dark:text-white" />
+    ),
+  },
+  {
+    name: "Roles",
+    link: "#adminroles",
+    icon: (
+      <IconPlayVolleyball className="h-4 w-4 text-neutral-500 dark:text-white" />
+    ),
+  },
+  {
+    name: "Teach",
+    link: "#teaching",
+    icon: (
+      <IconMathFunction className="h-4 w-4 text-neutral-500 dark:text-white" />
+    ),
+  },
+  {
+    name: "Membership",
+    link: "#professionalmemberships",
+    icon: (
+      <IconUsers className="h-4 w-4 text-neutral-500 dark:text-white" />
+    ),
+  },
+  {
+    name: "Projects",
+    link: "#projects",
+    icon: (
+      <IconPresentation className="h-4 w-4 text-neutral-500 dark:text-white" />
+    ),
+  },
+  {
+    name: "Supervision",
+    link: "#supervision",
+    icon: (
+      <IconBuildingLighthouse className="h-4 w-4 text-neutral-500 dark:text-white" />
+    ),
+  },
+];
 
 export default function Home() {
   return (
@@ -21,6 +83,7 @@ export default function Home() {
       {/* <Headernav /> */}
       {/* Added margin-top to account for the height of the navigation bar */}
       <div className="max-w-6xl mx-auto mt-auto space-y-12 relative z-10 pt-[64px]">
+        <FloatingNav navItems={navItems} />
         <HeaderProfile />
         <Education />
         <CareerProfile />
