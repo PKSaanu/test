@@ -11,11 +11,13 @@ export default function HeaderProfile() {
     <section className="relative w-full mb-8">
       {/* Main container with background */}
       <div className="relative bg-gray-800 bg-opacity-50 rounded-lg backdrop-blur-sm shadow-lg overflow-hidden">
-        {/* Background Effect */}
-        <BackgroundBeamsWithCollision children={undefined}/>
+        {/* Background Effect - Positioned absolutely with lower z-index */}
+        <div className="absolute inset-0 z-0">
+          <BackgroundBeamsWithCollision children={undefined} />
+        </div>
         
-        {/* Content Container */}
-        <div className="relative z-10 p-4 md:p-6">
+        {/* Content Container - Higher z-index to appear above background */}
+        <div className="relative z-20 p-4 md:p-6">
           {/* Profile Section */}
           <div className="flex flex-col md:flex-row gap-6">
             {/* Image Column */}
@@ -28,6 +30,7 @@ export default function HeaderProfile() {
                   width={200}
                   height={200}
                   className="rounded-lg border-2 border-purple-500 object-cover w-full h-full"
+                  style={{ zIndex: 30 }}
                 />
               </div>
               
@@ -36,7 +39,7 @@ export default function HeaderProfile() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="grid grid-cols-2 gap-2 w-full md:hidden"
+                className="grid grid-cols-2 gap-2 w-full md:hidden relative z-30"
               >
                 {[
                   { icon: GraduationCap, text: "Academic Excellence", color: "from-purple-900 to-indigo-900" },
@@ -57,7 +60,7 @@ export default function HeaderProfile() {
             </div>
 
             {/* Text Content Container */}
-            <div className="flex-1 flex flex-col">
+            <div className="flex-1 flex flex-col relative z-30">
               <div className="text-center md:text-left">
                 <motion.h1 
                   initial={{ opacity: 0, y: 20 }}
@@ -113,14 +116,14 @@ export default function HeaderProfile() {
                   </ul>
                 </nav>
 
-                {/* Brief Description */}
+                {/* Brief Description with background */}
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
-                  className="text-gray-300 mb-6"
+                  className="text-gray-300 mb-6 relative z-30"
                 >
-                  <p className="leading-relaxed text-sm md:text-base">
+                  <p className="leading-relaxed text-sm md:text-base bg-gray-800 bg-opacity-50 p-4 rounded-lg">
                     Enthusiastic academic with over seven years of experience in teaching, research, and industry, specializing
                     in deep learning, medical image analysis, and computer vision. Committed to advancing AI research,
                     mentoring, and contributing to academia and society.
@@ -132,7 +135,7 @@ export default function HeaderProfile() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
-                  className="hidden md:grid grid-cols-4 gap-4"
+                  className="hidden md:grid grid-cols-4 gap-4 relative z-30"
                 >
                   {[
                     { icon: GraduationCap, text: "Academic Excellence", color: "from-purple-900 to-indigo-900" },
