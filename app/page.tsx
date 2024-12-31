@@ -12,6 +12,7 @@ import Supervision from './components/Supervision'
 import Footer from './components/Footer'
 import Background from './components/Background'
 import { Headernav } from './components/Headernav'
+import { HeroParallaxDemo } from './components/parallax'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <Awards />
         <AdminRoles />
         <Teaching />
+        <HeroParallaxDemo />
         <ProfessionalMemberships />
         <Projects />
         <Supervision />

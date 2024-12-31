@@ -6,9 +6,10 @@ module.exports = {
 const nextConfig = {
   images: {
     domains: [
-      "api.microlink.io", // Microlink Image Preview
+      "api.microlink.io", "aceternity.com", // Microlink Image Preview
     ],
   },
 };
 
 module.exports = nextConfig;
+
