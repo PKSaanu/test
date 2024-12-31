@@ -13,9 +13,9 @@ export default function HeaderProfile() {
       <div className="relative bg-gray-800 bg-opacity-50 rounded-lg backdrop-blur-sm shadow-lg overflow-hidden">
         {/* Background Effect - Positioned absolutely with lower z-index */}
         <div className="absolute inset-0 z-0">
-          <BackgroundBeamsWithCollision children={undefined} />
+          <BackgroundBeamsWithCollision children />
         </div>
-        
+
         {/* Content Container - Higher z-index to appear above background */}
         <div className="relative z-20 p-4 md:p-6">
           {/* Profile Section */}
@@ -28,41 +28,17 @@ export default function HeaderProfile() {
                   src="/images/nirthika.jpg"
                   alt="Dr. Nirthika Rajendran"
                   width={200}
-                  height={200}
+                  height={280}
                   className="rounded-lg border-2 border-purple-500 object-cover w-full h-full"
                   style={{ zIndex: 30 }}
                 />
               </div>
-              
-              {/* Skills Grid - Mobile View */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                className="grid grid-cols-2 gap-2 w-full md:hidden relative z-30"
-              >
-                {[
-                  { icon: GraduationCap, text: "Academic Excellence", color: "from-purple-900 to-indigo-900" },
-                  { icon: Brain, text: "AI Research", color: "from-indigo-900 to-blue-900" },
-                  { icon: Code, text: "Software Development", color: "from-blue-900 to-cyan-900" },
-                  { icon: Database, text: "Data Analysis", color: "from-cyan-900 to-purple-900" }
-                ].map((item, index) => (
-                  <motion.div 
-                    key={index}
-                    className={`flex flex-col items-center p-3 bg-gradient-to-br ${item.color} rounded-lg hover:shadow-lg transition-all duration-300`}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    <item.icon className="w-6 h-6 text-white mb-2 opacity-75" />
-                    <span className="text-white text-xs font-medium text-center">{item.text}</span>
-                  </motion.div>
-                ))}
-              </motion.div>
             </div>
 
             {/* Text Content Container */}
             <div className="flex-1 flex flex-col relative z-30">
               <div className="text-center md:text-left">
-                <motion.h1 
+                <motion.h1
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
@@ -78,13 +54,13 @@ export default function HeaderProfile() {
                 >
                   Lecturer at University of Jaffna
                 </motion.h2>
-                
+
                 {/* Social Links */}
                 <nav className="mb-4">
                   <ul className="flex justify-center md:justify-start space-x-4">
                     <li>
-                      <Link 
-                        href="mailto:nirthika@univ.jfn.ac.lk" 
+                      <Link
+                        href="mailto:nirthika@univ.jfn.ac.lk"
                         className="text-gray-300 hover:text-purple-400 transition-colors duration-200"
                         aria-label="Email"
                       >
@@ -92,10 +68,10 @@ export default function HeaderProfile() {
                       </Link>
                     </li>
                     <li>
-                      <Link 
-                        href="https://lk.linkedin.com/in/nirthika" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                      <Link
+                        href="https://lk.linkedin.com/in/nirthika"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-gray-300 hover:text-purple-400 transition-colors duration-200"
                         aria-label="LinkedIn"
                       >
@@ -103,10 +79,10 @@ export default function HeaderProfile() {
                       </Link>
                     </li>
                     <li>
-                      <Link 
-                        href="https://scholar.google.com/citations?user=WtrsAqsAAAAJ&hl=en&oi=ao" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                      <Link
+                        href="https://scholar.google.com/citations?user=WtrsAqsAAAAJ&hl=en&oi=ao"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-gray-300 hover:text-purple-400 transition-colors duration-200"
                         aria-label="Google Scholar"
                       >
@@ -116,7 +92,7 @@ export default function HeaderProfile() {
                   </ul>
                 </nav>
 
-                {/* Brief Description with background */}
+                {/* Brief Description */}
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -129,33 +105,33 @@ export default function HeaderProfile() {
                     mentoring, and contributing to academia and society.
                   </p>
                 </motion.div>
-
-                {/* Skills Grid - Desktop View */}
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
-                  className="hidden md:grid grid-cols-4 gap-4 relative z-30"
-                >
-                  {[
-                    { icon: GraduationCap, text: "Academic Excellence", color: "from-purple-900 to-indigo-900" },
-                    { icon: Brain, text: "AI Research", color: "from-indigo-900 to-blue-900" },
-                    { icon: Code, text: "Software Development", color: "from-blue-900 to-cyan-900" },
-                    { icon: Database, text: "Data Analysis", color: "from-cyan-900 to-purple-900" }
-                  ].map((item, index) => (
-                    <motion.div 
-                      key={index}
-                      className={`flex flex-col items-center p-4 bg-gradient-to-br ${item.color} rounded-lg hover:shadow-lg transition-all duration-300`}
-                      whileHover={{ scale: 1.05 }}
-                    >
-                      <item.icon className="w-8 h-8 text-white mb-2 opacity-75" />
-                      <span className="text-white text-sm font-medium text-center">{item.text}</span>
-                    </motion.div>
-                  ))}
-                </motion.div>
               </div>
             </div>
           </div>
+
+          {/* Skills Grid - Desktop and Mobile */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 relative z-30"
+          >
+            {[
+              { icon: GraduationCap, text: "Academic Excellence", color: "from-purple-900 to-indigo-900" },
+              { icon: Brain, text: "AI Research", color: "from-indigo-900 to-blue-900" },
+              { icon: Code, text: "Software Development", color: "from-blue-900 to-cyan-900" },
+              { icon: Database, text: "Data Analysis", color: "from-cyan-900 to-purple-900" }
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                className={`flex flex-col items-center p-4 bg-gradient-to-br ${item.color} rounded-lg hover:shadow-lg transition-all duration-300`}
+                whileHover={{ scale: 1.05 }}
+              >
+                <item.icon className="w-8 h-8 text-white mb-2 opacity-75" />
+                <span className="text-white text-sm font-medium text-center">{item.text}</span>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </div>
     </section>
