@@ -91,7 +91,7 @@ export default function Supervision() {
                   className="absolute w-full"
                 >
                   <PinContainer title={`${categories[currentIndex].title}`}>
-                    <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 w-[16rem] h-[16rem] sm:w-[14rem] sm:h-[14rem] md:w-[16rem] md:h-[16rem] lg:w-[20rem] lg:h-[20rem]"> {/* Responsive width and height */}
+                    <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 w-[20rem] h-[20rem]">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="bg-purple-500 bg-opacity-20 p-3 rounded-full">
                           {categories[currentIndex].icon}
@@ -111,7 +111,7 @@ export default function Supervision() {
                   </PinContainer>
                 </motion.div>
               </AnimatePresence>
-
+              
               {/* Navigation Buttons */}
               <div className="absolute left-0 right-0 bottom-4 flex justify-between items-center px-4">
                 <button 
@@ -146,7 +146,7 @@ export default function Supervision() {
           <div className="hidden md:flex justify-center items-center gap-2">
             {categories.map((category, index) => (
               <PinContainer key={index} title={`${category.title}`}>
-                <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 w-[16rem] h-[16rem] sm:w-[14rem] sm:h-[14rem] md:w-[16rem] md:h-[16rem] lg:w-[20rem] lg:h-[20rem]"> {/* Responsive width and height */}
+                <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 w-[20rem] h-[20rem]">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="bg-purple-500 bg-opacity-20 p-3 rounded-full">
                       {category.icon}
