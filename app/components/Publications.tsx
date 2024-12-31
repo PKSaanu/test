@@ -138,7 +138,7 @@ export default function Publications() {
       volume: "2",
       pages: "1",
       abstract: "This article explores research directions in deep learning-based grading of diabetic retinopathy fundus images...",
-      doi: "https://bit.ly/3c6pOsV"
+      doi: "http://repo.lib.jfn.ac.lk/ujrr/bitstream/123456789/9041/1/Diabetic%20Retinopathy%20Fundus%20Image%20Grading%20Using%20Deep%20Learning%20Research%20Directions.pdf"
     },
     {
       title: "Best Practices for Professionals",
@@ -170,27 +170,19 @@ export default function Publications() {
   ]
 
   const renderPublication = (pub: Publication, index: number, currentSection: number) => {
-    const isExpanded = expandedPublication === index + (currentSection * 1000)
-    
+    const isExpanded = expandedPublication === index + (currentSection * 1000);
+  
     return (
       <motion.div 
         key={index}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: index * 0.1 }}
-        className="border-l-4 border-purple-500 pl-4 py-4 transition-all duration-300 hover:border-pink-500 hover:bg-gray-700 hover:bg-opacity-50 rounded relative overflow-hidden"
+        className={`border-l-4 border-purple-500 pl-4 py-4 transition-all duration-300 hover:border-pink-500 hover:bg-gray-700 hover:bg-opacity-50 rounded relative overflow-hidden cursor-pointer ${
+          isExpanded ? "bg-gray-700 bg-opacity-50" : ""
+        }`}
+        onClick={() => setExpandedPublication(isExpanded ? null : index + (currentSection * 1000))}
       >
-        {/* {pub.award && (
-          <motion.span 
-            className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <Trophy className="w-3 h-3 mr-1" />
-            {pub.award}
-          </motion.span>
-        )} */}
         <div className="flex justify-between items-start gap-4">
           <div className="flex-1">
             <p className="font-semibold text-lg text-gray-100">{pub.title}</p>
@@ -206,19 +198,14 @@ export default function Publications() {
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0.3 }}
-                
               >
                🏆 {pub.award}
               </motion.p>
             )}
           </div>
-          <button
-            onClick={() => setExpandedPublication(isExpanded ? null : index + (currentSection * 1000))}
-            className="text-gray-400 hover:text-purple-400 transition-colors duration-200"
-            aria-label={isExpanded ? "Collapse" : "Expand"}
-          >
+          <div className="text-gray-400 hover:text-purple-400 transition-colors duration-200" aria-label={isExpanded ? "Collapse" : "Expand"}>
             {isExpanded ? <ChevronUp className="w-6 h-6" /> : <ChevronDown className="w-6 h-6" />}
-          </button>
+          </div>
         </div>
         
         <AnimatePresence>
@@ -247,8 +234,9 @@ export default function Publications() {
           )}
         </AnimatePresence>
       </motion.div>
-    )
-  }
+    );
+  };
+  
 
   return (
     <section id="publications" className="mb-8 bg-gray-800 bg-opacity-50 p-6 rounded-lg backdrop-blur-sm shadow-lg">

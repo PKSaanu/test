@@ -40,3 +40,30 @@ export default function Home() {
 }
 
 
+// export default function Home() {
+//   return (
+//     <main className="min-h-screen p-4 md:p-8 lg:p-12 relative overflow-hidden">
+//       <Background />
+//       <div className="max-w-6xl mx-auto mt-auto space-y-12 relative z-10 pt-[64px]">
+//         <HeaderProfile />
+//         <Education />
+//         <CareerProfile />
+//         <Skills />
+//         <Publications />
+//         <Awards />
+//         <AdminRoles />
+//         <Teaching />
+//       </div>
+//       {/* Ensure full-width HeroParallaxDemo */}
+//       <div className="w-screen relative -mx-4 md:-mx-8 lg:-mx-12">
+//       <HeroParallaxDemo />
+//       </div>
+//       <div className="max-w-6xl mx-auto space-y-12 relative z-10">
+//         <ProfessionalMemberships />
+//         <Projects />
+//         <Supervision />
+//         <Footer />
+//       </div>
+//     </main>
+//   );
+// }

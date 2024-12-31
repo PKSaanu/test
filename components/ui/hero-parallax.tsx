@@ -143,9 +143,10 @@ export const ProductCard = ({
         <Image
           src={product.thumbnail}
           height="600"
-          width="600"
+          width="650"
           className="object-cover object-left-top absolute h-full w-full inset-0"
           alt={product.title}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px" // Responsive width control
         />
       </Link>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
