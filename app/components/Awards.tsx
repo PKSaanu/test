@@ -11,7 +11,13 @@ export default function Awards() {
     {
       year: 2024,
       title: "Emerging Affinity Group Award",
-      description: "IEEE Women in Engineering Student Branch Affinity Group of the University of Jaffna (Team Advisor)",
+      description: (
+        <>
+          IEEE Women in Engineering Student Branch Affinity Group of the University of Jaffna
+          <br />
+          (Team Advisor)
+        </>
+      ),
       icon: <AwardIcon className="w-8 h-8" />,
       color: "from-blue-500 to-purple-500",
     },
