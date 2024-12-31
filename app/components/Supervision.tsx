@@ -119,7 +119,7 @@ export default function Supervision() {
                   initial="enter"
                   animate="center"
                   exit="exit"
-                  className="w-full max-w-[420px]"
+                  className="w-full max-w-[400px]"
                 >
                   <PinContainer title={`${categories[currentIndex].title}`}>
                     <div className="flex flex-col p-4 tracking-tight text-slate-100/50 w-full h-[360px]">
