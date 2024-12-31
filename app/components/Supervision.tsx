@@ -36,7 +36,7 @@ export default function Supervision() {
           <h2 className="text-2xl font-bold mb-16 text-purple-400">Supervision</h2>
           <div className="flex justify-center items-center gap-2">
             {categories.map((category, index) => (
-              <PinContainer key={index} title={`${category.title} (${category.count})`} >
+              <PinContainer key={index} title={`${category.title}`} >
                 <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 w-[20rem] h-[20rem]">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="bg-purple-500 bg-opacity-20 p-3 rounded-full">
