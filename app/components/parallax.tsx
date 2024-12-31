@@ -10,32 +10,32 @@ export const products = [
     title: "Moonbeam",
     link: "https://gomoonbeam.com",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+      "/images/IEEE-SCCI-D3-28.jpg",
   },
   {
     title: "Cursor",
     link: "https://cursor.so",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+      "/images/IEEE-SSCI-D2-49.jpg",
   },
   {
     title: "Rogue",
     link: "https://userogue.com",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+      "/images/13-scaled.jpg",
   },
 
   {
     title: "Editorially",
     link: "https://editorially.org",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+      "/images/1730875476889.jpeg",
   },
   {
     title: "Editrix AI",
     link: "https://editrix.ai",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+      "/images/1730875726782.jpeg",
   },
   {
     title: "Pixel Perfect",
@@ -72,7 +72,7 @@ export const products = [
     title: "Renderwork Studio",
     link: "https://renderwork.studio",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+      "/images/1730875726782.jpeg",
   },
 
   {
