@@ -137,3 +137,12 @@ body {
   background-size: 200% 200%;
   animation: gradientAnimation 3s ease infinite;
 }
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* for Internet Explorer */
+  scrollbar-width: none;  /* for Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;  /* for Chrome, Safari, and Opera */
+}

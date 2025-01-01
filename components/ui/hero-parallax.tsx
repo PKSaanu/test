@@ -9,6 +9,8 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import "swiper/css";
+
 
 export const ProductCard = ({
   product,
@@ -89,14 +91,14 @@ export const HeroParallax = ({
     offset: ["start start", "end 80%"],
   });
 
-  const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
+  const springConfig = { stiffness: 100, damping: 30, bounce: 100 };
 
   const translateX = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, 1000]),
+    useTransform(scrollYProgress, [0, 1], [0, 300]),
     springConfig
   );
   const translateXReverse = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, -1000]),
+    useTransform(scrollYProgress, [0, 1], [0, -500]),
     springConfig
   );
   const rotateX = useSpring(
@@ -130,7 +132,8 @@ export const HeroParallax = ({
           opacity,
         }}
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-10">
+        {/* First Row with horizontal swipe */}
+        <motion.div className="flex space-x-20 mb-10 overflow-x-auto no-scrollbar">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -139,7 +142,9 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row mb-10 space-x-20">
+
+        {/* Second Row with horizontal swipe */}
+        <motion.div className="flex space-x-20 mb-10 overflow-x-auto no-scrollbar">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -148,7 +153,9 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+
+        {/* Third Row with horizontal swipe */}
+        <motion.div className="flex space-x-20 mb-10 overflow-x-auto no-scrollbar">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -161,6 +168,7 @@ export const HeroParallax = ({
     </div>
   );
 };
+
 
 export const Header = () => {
   return (

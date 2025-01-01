@@ -128,7 +128,8 @@ export default function HeaderProfile() {
                     </li>
                     <li>
                       <Link
-                        href="mailto:nirthika@univ.jfn.ac.lk"
+                        href="https://github.com/Nirthika"
+                        target="_blank"
                         className="text-gray-300 hover:text-purple-400 transition-colors duration-200"
                         aria-label="GitHub"
                       >

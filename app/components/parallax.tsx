@@ -7,41 +7,41 @@ export function HeroParallaxDemo() {
 }
 export const products = [
   {
-    title: "IEEE Summer School23",
+    title: "IEEE Summer School'23",
     link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/2023-ieee-summer-school-dcs",
     thumbnail:
       "/images/IEEE-SCCI-D3-28.jpg",
   },
   {
-    title: "IEEE Summer School23",
+    title: "IEEE Summer School'23",
     link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/2023-ieee-summer-school-dcs",
     thumbnail:
       "/images/IEEE-SSCI-D2-49.jpg",
   },
   {
-    title: "CYBERSECURITY BOOTCAMP24",
+    title: "CYBERSECURITY BOOTCAMP'24",
     link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/gessomi-2024-cybersecurity-bootcamp",
     thumbnail:
       "/images/13-scaled.jpg",
   },
 
   {
-    title: "Emerging Affinity Group Award",
+    title: "Emerging Affinity Group Certificate",
     link: "https://sites.google.com/univ.jfn.ac.lk/wie-uoj/achievements",
     thumbnail:
       "/images/1730875476889.jpeg",
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
+    title: "Emerging Affinity Group Award",
+    link: "https://sites.google.com/univ.jfn.ac.lk/wie-uoj/achievements",
     thumbnail:
       "/images/1730875726782.jpeg",
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
+    title: "SL-SWCS''19",
+    link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/sl-swcs19",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+      "/images/slswcs19.jpg",
   },
 
   {
@@ -63,23 +63,23 @@ export const products = [
       "/images/yarlgeek.png",
   },
   {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
+    title: "IEEE Day'23",
+    link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/ieee-day-2023",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+      "/images/ieeeday23-2.jpg",
   },
   {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
+    title: "SL-SWCS''19",
+    link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/sl-swcs19",
     thumbnail:
-      "/images/1730875726782.jpeg",
+      "/images/slswcs19-1.jpg",
   },
 
   {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
+    title: "SL-SWCS'21",
+    link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/sl-swcs21",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+      "/images/SLSWCS-21.jpg",
   },
   {
     title: "Google exploreCSR Symposium24",
@@ -88,15 +88,15 @@ export const products = [
       "/images/symbosiumstudents24.jpg",
   },
   {
-    title: "IEEE Summer School23",
-    link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/2023-ieee-summer-school-dcs",
+    title: "SL-SWCS''17",
+    link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/sl-swcs17",
     thumbnail:
-      "/images/IEEE-SCCI-D3-28.jpg",
+      "/images/SL-SWCS17-1.jpg",
   },
   {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
+    title: "IEEE Day'23",
+    link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/ieee-day-2023",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+      "/images/ieeeday23.jpg",
   },
 ];
