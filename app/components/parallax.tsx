@@ -26,8 +26,8 @@ export const products = [
   },
 
   {
-    title: "Editorially",
-    link: "https://editorially.org",
+    title: "Emerging Affinity Group Award",
+    link: "https://sites.google.com/univ.jfn.ac.lk/wie-uoj/achievements",
     thumbnail:
       "/images/1730875476889.jpeg",
   },
@@ -45,22 +45,22 @@ export const products = [
   },
 
   {
-    title: "Algochurn",
-    link: "https://algochurn.com",
+    title: "Pongal",
+    link: "javascript:void(0)",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+      "/images/pongal.jpg",
   },
   {
     title: "PhD Graduation",
-    link: "https://ui.aceternity.com",
+    link: "javascript:void(0)",
     thumbnail:
       "/images/graduationPhD.jpg",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
+    title: "Yarl Geek",
+    link: "javascript:void(0)",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+      "/images/yarlgeek.jpg",
   },
   {
     title: "SmartBridge",
