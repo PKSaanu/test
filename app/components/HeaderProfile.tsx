@@ -30,7 +30,7 @@ export default function HeaderProfile() {
               {/* Image Container */}
               <div className="relative w-32 h-48 md:w-[200px] md:h-[280px]">
                 <Image
-                  src="/images/nirthika2.png"
+                  src="/images/nirthika2-2.png"
                   alt="Dr. Nirthika Rajendran"
                   width={200}
                   height={260}
