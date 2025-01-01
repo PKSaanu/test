@@ -10,6 +10,67 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
+export const ProductCard = ({
+  product,
+  translate,
+}: {
+  product: {
+    title: string;
+    link: string;
+    thumbnail: string;
+  };
+  translate: MotionValue<number>;
+}) => {
+  const CardContent = () => (
+    <>
+      <Image
+        src={product.thumbnail}
+        height="600"
+        width="650"
+        className="object-contain object-left-top absolute h-full w-full inset-0 rounded-md"
+        alt={product.title}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+      />
+      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
+      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
+      {product.title}
+      </h2>
+    </>
+  );
+
+  const MotionWrapper = ({ children }: { children: React.ReactNode }) => (
+    <motion.div
+      style={{
+        x: translate,
+      }}
+      whileHover={{
+        y: -20,
+      }}
+      className="group/product h-96 w-[30rem] relative flex-shrink-0 overflow-hidden rounded-md"
+    >
+      {children}
+    </motion.div>
+  );
+
+  if (product.link === '#') {
+    return (
+      <MotionWrapper>
+        <div className="w-full h-full">
+          <CardContent />
+        </div>
+      </MotionWrapper>
+    );
+  }
+
+  return (
+    <MotionWrapper>
+      <Link href={product.link} target="_blank" className="block w-full h-full">
+        <CardContent />
+      </Link>
+    </MotionWrapper>
+  );
+};
+
 export const HeroParallax = ({
   products,
 }: {
@@ -54,10 +115,11 @@ export const HeroParallax = ({
     useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
     springConfig
   );
+
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[300vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -67,7 +129,6 @@ export const HeroParallax = ({
           translateY,
           opacity,
         }}
-        className=""
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-10">
           {firstRow.map((product) => (
@@ -78,7 +139,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-10 space-x-20 ">
+        <motion.div className="flex flex-row mb-10 space-x-20">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -111,49 +172,5 @@ export const Header = () => {
         As a passionate educator and researcher, I aim to inspire students and collaborate with fellow scholars. With a focus on cutting-edge technologies, I strive to contribute to the academic community and share my knowledge through research, teaching, and mentorship.
       </p>
     </div>
-  );
-};
-
-export const ProductCard = ({
-  product,
-  translate,
-}: {
-  product: {
-    title: string;
-    link: string;
-    thumbnail: string;
-  };
-  translate: MotionValue<number>;
-}) => {
-  return (
-    <motion.div
-      style={{
-        x: translate,
-      }}
-      whileHover={{
-        y: -20,
-      }}
-      key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0 overflow-hidden rounded-md"
-    >
-      <Link
-        href={product.link}
-        className="block group-hover/product:shadow-2xl "
-        target="_blank"
-      >
-        <Image
-          src={product.thumbnail}
-          height="600"
-          width="650"
-          className="object-contain object-left-top absolute h-full w-full inset-0 rounded-md"
-          alt={product.title}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px" // Responsive width control
-        />
-      </Link>
-      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
-        {product.title}
-      </h2>
-    </motion.div>
   );
 };

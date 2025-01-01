@@ -46,19 +46,19 @@ export const products = [
 
   {
     title: "Pongal",
-    link: "javascript:void(0)",
+    link: "#",
     thumbnail:
       "/images/pongal.png",
   },
   {
     title: "PhD Graduation",
-    link: "javascript:void(0)",
+    link: "#",
     thumbnail:
       "/images/graduationPhD.jpg",
   },
   {
     title: "Yarl Geek",
-    link: "javascript:void(0)",
+    link: "#",
     thumbnail:
       "/images/yarlgeek.png",
   },
