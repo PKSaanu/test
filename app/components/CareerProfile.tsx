@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Briefcase, Calendar } from "lucide-react";
 import { Timeline } from "@/components/ui/timeline";
+import { IconBriefcase, IconCalendarWeek } from "@tabler/icons-react";
 
 interface CareerItem {
   title: string;
@@ -45,12 +46,12 @@ export function CareerProfile() {
         className="bg-gray-700 bg-opacity-50 p-4 sm:p-5 rounded-lg hover:bg-opacity-70 transition-all duration-300"
       >
         <h3 className="text-lg sm:text-xl font-semibold text-purple-300 flex items-center gap-2">
-          <Briefcase className="w-5 h-5" />
+          <IconBriefcase className="w-5 h-5" />
           {item.title}
         </h3>
         <p className="text-gray-300 mt-2 text-sm sm:text-base">{item.company}</p>
         <p className="text-purple-400 mt-1 text-sm sm:text-base flex items-center gap-2">
-          <Calendar className="w-4 h-4" />
+          <IconCalendarWeek className="w-4 h-4" />
           {item.period}
         </p>
         {item.description && (

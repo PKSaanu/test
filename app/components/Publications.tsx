@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Book, Award, FileText, Newspaper, ChevronDown, ChevronUp, Trophy, GraduationCap } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { LinkPreview } from "@/components/ui/link-preview";
+import { IconAward, IconBooks, IconLink, IconMicroscope, IconNews, IconPresentation, IconSchool } from '@tabler/icons-react';
 
 interface Publication {
   title: string
@@ -226,7 +227,7 @@ export default function Publications() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 mt-4 text-purple-400 hover:text-purple-300 transition-colors duration-200"
                 >
-                  <FileText className="w-4 h-4" />
+                  <IconMicroscope className="w-6 h-6" />
                   View Paper
                 </a>
               )}
@@ -245,7 +246,7 @@ export default function Publications() {
       <div className="space-y-8">
         <div>
           <h3 className="flex items-center gap-2 text-xl font-semibold mb-4 text-purple-300">
-            <Book className="w-5 h-5" />
+            <IconBooks className="w-7 h-7" />
             Indexed International Journals
           </h3>
           <div className="space-y-4">
@@ -255,7 +256,7 @@ export default function Publications() {
 
         <div>
           <h3 className="flex items-center gap-2 text-xl font-semibold mb-4 text-purple-300">
-            <Award className="w-5 h-5" />
+            <IconAward className="w-7 h-7" />
             International Conference Full Papers
           </h3>
           <div className="space-y-4">
@@ -265,7 +266,7 @@ export default function Publications() {
 
         <div>
           <h3 className="flex items-center gap-2 text-xl font-semibold mb-4 text-purple-300">
-            <FileText className="w-5 h-5" />
+            <IconPresentation className="w-7 h-7" />
             National Workshop Posters
           </h3>
           <div className="space-y-4">
@@ -275,7 +276,7 @@ export default function Publications() {
 
         <div>
           <h3 className="flex items-center gap-2 text-xl font-semibold mb-4 text-purple-300">
-            <Newspaper className="w-5 h-5" />
+            <IconNews className="w-7 h-7" />
             Articles in Newsletters
           </h3>
           <div className="space-y-4">
@@ -284,7 +285,7 @@ export default function Publications() {
         </div>
         <div>
           <h3 className="flex items-center gap-2 text-xl font-semibold mb-4 text-purple-300">
-            <GraduationCap className="w-5 h-5" />
+            <IconSchool className="w-7 h-7" />
             Thesis
           </h3>
           <div className="space-y-4">

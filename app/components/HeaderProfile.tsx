@@ -90,7 +90,7 @@ export default function HeaderProfile() {
                         aria-label="LinkedIn"
                       >
                         <img
-                          src="/images/linkedin.png"
+                          src="/images/linkedin-2.png"
                           alt="LinkedIn"
                           className="w-12 h-12 md:w-12 md:h-12 object-contain"
                         />
@@ -133,7 +133,7 @@ export default function HeaderProfile() {
                         aria-label="GitHub"
                       >
                         <img
-                          src="/images/github.png"
+                          src="/images/github2.png"
                           alt="Github"
                           className="w-12 h-12 md:w-12 md:h-12 object-contain"
                         />
