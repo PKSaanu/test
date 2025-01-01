@@ -48,7 +48,7 @@ export const products = [
     title: "Pongal",
     link: "javascript:void(0)",
     thumbnail:
-      "/images/pongal.jpg",
+      "/images/pongal.png",
   },
   {
     title: "PhD Graduation",
@@ -60,7 +60,7 @@ export const products = [
     title: "Yarl Geek",
     link: "javascript:void(0)",
     thumbnail:
-      "/images/yarlgeek.jpg",
+      "/images/yarlgeek.png",
   },
   {
     title: "SmartBridge",
