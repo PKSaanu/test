@@ -41,7 +41,7 @@ export const products = [
     title: "SL-SWCS''19",
     link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/sl-swcs19",
     thumbnail:
-      "/images/slswcs19.jpg",
+      "/images/slswcs19-1.jpg",
   },
 
   {
