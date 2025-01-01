@@ -32,10 +32,10 @@ export const products = [
       "/images/1730875476889.jpeg",
   },
   {
-    title: "Emerging Affinity Group Award",
-    link: "https://sites.google.com/univ.jfn.ac.lk/wie-uoj/achievements",
+    title: "Google exploreCSR Symposium24",
+    link: "https://www.csc.jfn.ac.lk/google-research/",
     thumbnail:
-      "/images/1730875726782.jpeg",
+      "/images/symbosiumstudents24.jpg",
   },
   {
     title: "SL-SWCS''19",
@@ -82,10 +82,10 @@ export const products = [
       "/images/SLSWCS-21.jpg",
   },
   {
-    title: "Google exploreCSR Symposium24",
-    link: "https://www.csc.jfn.ac.lk/google-research/",
+    title: "Emerging Affinity Group Award",
+    link: "https://sites.google.com/univ.jfn.ac.lk/wie-uoj/achievements",
     thumbnail:
-      "/images/symbosiumstudents24.jpg",
+      "/images/1730875726782.jpeg",
   },
   {
     title: "SL-SWCS''17",
