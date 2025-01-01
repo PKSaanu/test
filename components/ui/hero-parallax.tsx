@@ -25,7 +25,7 @@ export const HeroParallax = ({
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"],
+    offset: ["start start", "end 80%"],
   });
 
   const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
@@ -69,7 +69,7 @@ export const HeroParallax = ({
         }}
         className=""
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-10">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -78,7 +78,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
+        <motion.div className="flex flex-row  mb-10 space-x-20 ">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -134,17 +134,18 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product h-96 w-[30rem] relative flex-shrink-0 overflow-hidden rounded-md"
     >
       <Link
         href={product.link}
         className="block group-hover/product:shadow-2xl "
+        target="_blank"
       >
         <Image
           src={product.thumbnail}
           height="600"
           width="650"
-          className="object-cover object-left-top absolute h-full w-full inset-0"
+          className="object-contain object-left-top absolute h-full w-full inset-0 rounded-md"
           alt={product.title}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px" // Responsive width control
         />

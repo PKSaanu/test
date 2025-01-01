@@ -7,20 +7,20 @@ export function HeroParallaxDemo() {
 }
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    title: "IEEE Summer School23",
+    link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/2023-ieee-summer-school-dcs",
     thumbnail:
       "/images/IEEE-SCCI-D3-28.jpg",
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
+    title: "IEEE Summer School23",
+    link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/2023-ieee-summer-school-dcs",
     thumbnail:
       "/images/IEEE-SSCI-D2-49.jpg",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
+    title: "CYBERSECURITY BOOTCAMP24",
+    link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/gessomi-2024-cybersecurity-bootcamp",
     thumbnail:
       "/images/13-scaled.jpg",
   },
@@ -51,10 +51,10 @@ export const products = [
       "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
   },
   {
-    title: "Aceternity UI",
+    title: "PhD Graduation",
     link: "https://ui.aceternity.com",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+      "/images/graduationPhD.jpg",
   },
   {
     title: "Tailwind Master Kit",
@@ -82,16 +82,16 @@ export const products = [
       "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
+    title: "Google exploreCSR Symposium24",
+    link: "https://www.csc.jfn.ac.lk/google-research/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+      "/images/symbosiumstudents24.jpg",
   },
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
+    title: "IEEE Summer School23",
+    link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/2023-ieee-summer-school-dcs",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+      "/images/IEEE-SCCI-D3-28.jpg",
   },
   {
     title: "E Free Invoice",
