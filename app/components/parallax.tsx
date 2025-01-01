@@ -45,13 +45,13 @@ export const products = [
   },
 
   {
-    title: "Pongal",
+    title: "Thai Pongal'24",
     link: "#",
     thumbnail:
       "/images/pongal.png",
   },
   {
-    title: "PhD Graduation",
+    title: "PhD Graduation'23",
     link: "#",
     thumbnail:
       "/images/graduationPhD.jpg",
