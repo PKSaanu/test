@@ -26,19 +26,19 @@ export const products = [
   },
 
   {
-    title: "Emerging Affinity Group Certificate",
+    title: "Emerging Affinity Group Certificate'24",
     link: "https://sites.google.com/univ.jfn.ac.lk/wie-uoj/achievements",
     thumbnail:
       "/images/1730875476889.jpeg",
   },
   {
-    title: "Google exploreCSR Symposium24",
+    title: "Google exploreCSR Symposium'24",
     link: "https://www.csc.jfn.ac.lk/google-research/",
     thumbnail:
       "/images/symbosiumstudents24.jpg",
   },
   {
-    title: "SL-SWCS''19",
+    title: "SL-SWCS'19",
     link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/sl-swcs19",
     thumbnail:
       "/images/slswcs19-1.jpg",
@@ -57,7 +57,7 @@ export const products = [
       "/images/graduationPhD.jpg",
   },
   {
-    title: "Yarl Geek",
+    title: "Yarl Geek'23",
     link: "#",
     thumbnail:
       "/images/yarlgeek.png",
@@ -82,13 +82,13 @@ export const products = [
       "/images/SLSWCS-21.jpg",
   },
   {
-    title: "Emerging Affinity Group Award",
+    title: "Emerging Affinity Group Award'24",
     link: "https://sites.google.com/univ.jfn.ac.lk/wie-uoj/achievements",
     thumbnail:
       "/images/1730875726782.jpeg",
   },
   {
-    title: "SL-SWCS''17",
+    title: "SL-SWCS'17",
     link: "https://www.csc.jfn.ac.lk/gallery/nggallery/album/sl-swcs17",
     thumbnail:
       "/images/SL-SWCS17-1.jpg",
